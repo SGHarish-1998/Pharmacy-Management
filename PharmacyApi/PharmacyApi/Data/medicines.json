@@ -1,0 +1,38 @@
+[
+  {
+    "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "FullName": "Paracetamol 500mg",
+    "Notes": "For fever and pain relief",
+    "ExpiryDate": "2026-04-20T00:00:00",
+    "Quantity": 100,
+    "Price": 5.50,
+    "Brand": "Tylenol"
+  },
+  {
+    "Id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "FullName": "Ibuprofen 200mg",
+    "Notes": "Anti-inflammatory",
+    "ExpiryDate": "2026-12-15T00:00:00",
+    "Quantity": 5,
+    "Price": 12.99,
+    "Brand": "Advil"
+  },
+  {
+    "Id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "FullName": "Amoxicillin 250mg",
+    "Notes": "Antibiotic",
+    "ExpiryDate": "2027-04-01T00:00:00",
+    "Quantity": 46,
+    "Price": 15.00,
+    "Brand": "Amoxil"
+  },
+  {
+    "Id": "a32ea689-dd5c-488e-a4e9-7ccfd4cd8db4",
+    "FullName": "Harish",
+    "Notes": "Hiii",
+    "ExpiryDate": "2026-04-07T00:00:00",
+    "Quantity": 3,
+    "Price": 222,
+    "Brand": "SG"
+  }
+]

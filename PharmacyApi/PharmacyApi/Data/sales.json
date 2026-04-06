@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "c7109767-6eed-495f-a06e-9bb38a055216",
+    "MedicineId": "a32ea689-dd5c-488e-a4e9-7ccfd4cd8db4",
+    "MedicineName": "Harish",
+    "Quantity": 2,
+    "TotalPrice": 444,
+    "SaleDate": "2026-04-06T06:58:52.3635931Z"
+  },
+  {
+    "Id": "f4caf0db-e106-412b-9755-44d84fe57cc6",
+    "MedicineId": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "MedicineName": "Amoxicillin 250mg",
+    "Quantity": 4,
+    "TotalPrice": 60.00,
+    "SaleDate": "2026-04-06T10:22:54.4528378Z"
+  }
+]
