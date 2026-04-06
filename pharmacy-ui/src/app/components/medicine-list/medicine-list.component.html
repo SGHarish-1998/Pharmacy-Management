@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>Medicine Inventory</h1>
+
+  <div class="search-bar">
+    <input 
+      type="text" 
+      [(ngModel)]="searchTerm" 
+      (input)="applyFilter()" 
+      placeholder="Search by name or Medicine brand..."
+    />
+  </div>
+
+  <table class="medicine-grid">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Brand</th>
+        <th>Expiry Date</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let medicine of filteredMedicines" 
+          [class.expiring-red]="isExpiringSoon(medicine.expiryDate)"
+          [class.low-stock-yellow]="!isExpiringSoon(medicine.expiryDate) && isLowStock(medicine.quantity)">
+        <td>{{ medicine.fullName }}</td>
+        <td>{{ medicine.brand }}</td>
+        <td>{{ medicine.expiryDate | date:'mediumDate' }}</td>
+        <td>{{ medicine.quantity }}</td>
+        <td>{{ medicine.price | currency:'USD' }}</td>
+        <td>
+          <button (click)="recordSale(medicine)" [disabled]="medicine.quantity <= 0">Sell</button>
+        </td>
+      </tr>
+      <tr *ngIf="filteredMedicines.length === 0">
+        <td colspan="6" style="text-align:center;">No medicines found.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,76 @@
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.medicine-grid {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.medicine-grid th, .medicine-grid td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.medicine-grid th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+/* Coloring rules */
+.expiring-red {
+  background-color: #ffcccc !important;
+}
+
+.low-stock-yellow {
+  background-color: #ffffcc !important;
+}
+
+.medicine-grid tr:hover {
+  filter: brightness(0.95);
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
